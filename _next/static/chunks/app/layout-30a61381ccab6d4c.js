@@ -50,7 +50,7 @@ try {
         function h() {
             return (0, i.jsx)("img", {
               src: "/_next/static/media/aiko-long-kata.9da95927.svg",
-              alt: "Aiko Logo"
+              alt: "SpoodyQue Logo"
             });
           }          
       let n = () => {
