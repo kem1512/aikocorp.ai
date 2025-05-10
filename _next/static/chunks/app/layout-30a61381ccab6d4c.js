@@ -58,8 +58,8 @@ try {
           f = (0, l.useRef)(null),
           r = (0, l.useRef)(null),
           n = [
-            { name: "Pricing", href: "/pricing.html" },
-            { name: "Contact", href: "/contact.html" },
+            { name: "Pricing", href: "/pricing" },
+            { name: "Contact", href: "/contact" },
           ];
         return (0, i.jsxs)("header", {
           className: "sticky top-0 z-50 bg-black/50 backdrop-blur-xs",
@@ -127,7 +127,7 @@ try {
                       variant: "default",
                       asChild: !0,
                       children: (0, i.jsx)(s(), {
-                        href: "/login.html",
+                        href: "/login",
                         children: "Login",
                       }),
                     }),
@@ -160,7 +160,7 @@ try {
                       )
                     ),
                     (0, i.jsx)(s(), {
-                      href: "/login.html",
+                      href: "/login",
                       className: "py-2 block",
                       onClick: () => t(!1),
                       children: "Login",
