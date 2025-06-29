@@ -151,7 +151,7 @@
                             sizes: a || "w" !== u ? a : "100vw",
                             // srcSet: s.map((e, n) => l({ config: t, src: r, quality: o, width: e }) + " " + ("w" === u ? e : n + 1) + u).join(", "),
                             // src: l({ config: t, src: r, quality: o, width: s[d] }),
-                            src: "/_next/Aiko_Icon_Confused_2.png"
+                            src: r
                         };
                     })({ config: s, src: c, unoptimized: p, width: G, quality: H, sizes: f, loader: L });
                 return {
