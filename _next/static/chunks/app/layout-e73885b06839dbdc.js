@@ -136,7 +136,7 @@
                                             className: "flex flex-row items-center gap-4 mt-4",
                                             children: [
                                                 (0, a.jsx)(l(), {
-                                                    href: "https://x.com/aiko_corp",
+                                                    href: "https://x.com/spoodyque",
                                                     target: "_blank",
                                                     children: (0, a.jsxs)("svg", {
                                                         width: "16",
@@ -147,21 +147,6 @@
                                                         children: [
                                                             (0, a.jsx)("title", { children: "X (formerly Twitter) Logo" }),
                                                             (0, a.jsx)("path", { fill: "white", d: "m236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z" }),
-                                                        ],
-                                                    }),
-                                                }),
-                                                (0, a.jsx)(l(), { href: "https://www.linkedin.com/company/aikocorp/", target: "_blank", children: (0, a.jsx)(d.A, { size: 19 }) }),
-                                                (0, a.jsx)(u, {
-                                                    children: (0, a.jsxs)(m, {
-                                                        children: [
-                                                            (0, a.jsx)(x, {
-                                                                asChild: !0,
-                                                                children: (0, a.jsx)("button", {
-                                                                    onClick: () => t(!e),
-                                                                    children: (0, a.jsx)(o.default, { src: "/discord.svg", alt: "Discord Logo", width: 100, height: 100, className: "h-6 w-auto ", draggable: "false" }),
-                                                                }),
-                                                            }),
-                                                            (0, a.jsx)(p, { children: "Sign up to join our Discord" }),
                                                         ],
                                                     }),
                                                 }),
