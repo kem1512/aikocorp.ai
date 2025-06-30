@@ -10,12 +10,12 @@
                 l = s.n(n),
                 i = s(8036);
             let o = () =>
-(0, a.jsx)("img", {
-  src: "../../../_next/spoodyque.svg",    // hoặc URL đầy đủ nếu nằm ở CDN
-  width: "140",
-  height: "auto",
-  alt: "Spooodyque Logo"
-}),
+                (0, a.jsx)("img", {
+                    src: "../../../_next/impce.png",
+                    width: "140",
+                    height: "auto",
+                    alt: "Spooodyque Logo"
+                }),
                 d = () => {
                     let [e, t] = (0, r.useState)(!1),
                         s = (0, r.useRef)(null),
@@ -136,7 +136,7 @@
                                             className: "flex flex-row items-center gap-4 mt-4",
                                             children: [
                                                 (0, a.jsx)(l(), {
-                                                    href: "https://x.com/spoodyque",
+                                                    href: "https://x.com/impce",
                                                     target: "_blank",
                                                     children: (0, a.jsxs)("svg", {
                                                         width: "16",
@@ -545,7 +545,7 @@
                                                 (0, a.jsxs)("div", {
                                                     className: "flex items-center justify-between",
                                                     children: [
-                                                        (0, a.jsx)("h3", { className: "text-primary font-semibold", children: "SPOODYQUE Support" }),
+                                                        (0, a.jsx)("h3", { className: "text-primary font-semibold", children: "Impce Support" }),
                                                         (0, a.jsxs)("div", {
                                                             className: "flex gap-4 items-center",
                                                             children: [
@@ -610,7 +610,7 @@
                                                                                             children: [
                                                                                                 (0, a.jsx)("div", {
                                                                                                     className: "flex-shrink-0",
-                                                                                                    children: (0, a.jsx)(x.default, { src: "/aikoface.jpg", width: 32, height: 32, alt: "Aiko", className: "rounded-full" }),
+                                                                                                    children: (0, a.jsx)(x.default, { src: "/_next/Aiko_Icon_Confused_2.png", width: 32, height: 32, alt: "Aiko", className: "rounded-full" }),
                                                                                                 }),
                                                                                                 (0, a.jsx)("div", { className: (0, d.cn)("max-w-[80%] rounded-lg p-2 text-sm", "bg-white/10 text-white"), children: e.content }),
                                                                                             ],
