@@ -149,7 +149,32 @@
                                                             (0, a.jsx)("path", { fill: "white", d: "m236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z" }),
                                                         ],
                                                     }),
-                                                }),
+                                                }), (0,
+                                                    a.jsx)(u, {
+                                                        children: (0,
+                                                            a.jsxs)(m, {
+                                                                children: [(0,
+                                                                    a.jsx)(x, {
+                                                                        asChild: !0,
+                                                                        children: (0,
+                                                                            a.jsx)("button", {
+                                                                                onClick: () => t(!e),
+                                                                                children: (0,
+                                                                                    a.jsx)(o.default, {
+                                                                                        src: "/discord.svg",
+                                                                                        alt: "Discord Logo",
+                                                                                        width: 100,
+                                                                                        height: 100,
+                                                                                        className: "h-6 w-auto ",
+                                                                                        draggable: "false"
+                                                                                    })
+                                                                            })
+                                                                    }), (0,
+                                                                        a.jsx)(p, {
+                                                                            children: "Sign up to join our Discord"
+                                                                        })]
+                                                            })
+                                                    })
                                             ],
                                         }),
                                         e && (0, a.jsx)("p", { className: "text-xs text-gray-400 mt-2", children: "Sign up to join our Discord" }),
@@ -211,7 +236,7 @@
                 });
             }
         },
-        962: () => {},
+        962: () => { },
         1683: (e, t, s) => {
             "use strict";
             s.d(t, { cn: () => n });
@@ -291,23 +316,23 @@
                 n = s(4872),
                 l = s(1683);
             let i = (0,
-            n.F)(
-                "inline-flex items-center cursor-pointer justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0",
-                {
-                    variants: {
-                        variant: {
-                            default: "bg-primary text-primary-foreground hover:bg-primary/90",
-                            destructive: "bg-destructive text-white hover:bg-destructive/90",
-                            outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-                            secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/90",
-                            ghost: "hover:bg-accent hover:text-accent-foreground",
-                            link: "text-primary underline-offset-4 hover:underline",
+                n.F)(
+                    "inline-flex items-center cursor-pointer justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0",
+                    {
+                        variants: {
+                            variant: {
+                                default: "bg-primary text-primary-foreground hover:bg-primary/90",
+                                destructive: "bg-destructive text-white hover:bg-destructive/90",
+                                outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+                                secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/90",
+                                ghost: "hover:bg-accent hover:text-accent-foreground",
+                                link: "text-primary underline-offset-4 hover:underline",
+                            },
+                            size: { default: "h-9 px-4 py-2 has-[>svg]:px-3", sm: "h-8 gap-1.5 px-3 has-[>svg]:px-2.5", lg: "h-10 px-6 has-[>svg]:px-4", icon: "size-9" },
                         },
-                        size: { default: "h-9 px-4 py-2 has-[>svg]:px-3", sm: "h-8 gap-1.5 px-3 has-[>svg]:px-2.5", lg: "h-10 px-6 has-[>svg]:px-4", icon: "size-9" },
-                    },
-                    defaultVariants: { variant: "default", size: "default" },
-                }
-            );
+                        defaultVariants: { variant: "default", size: "default" },
+                    }
+                );
             function o(e) {
                 let { className: t, variant: s, size: n, asChild: o = !1, ...d } = e,
                     c = o ? r.DX : "button";
@@ -373,7 +398,7 @@
                     }, [e]),
                     (0, r.useEffect)(() => {
                         if ((null == e ? void 0 : e.isOpen) && !e.hasShownWelcome && 0 === e.messages.length) {
-                            let s = { id: "aiko-welcome", content: "Our team usually responds in 2-3 minutes. How can we help you today?", sender: "aiko", author: "Aiko", timestamp: new Date() };
+                            let s = { id: "aiko-welcome", content: "Our team usually responds in 2-3 minutes. How can we help you today?", sender: "aiko", author: "Impce", timestamp: new Date() };
                             t({ ...e, messages: [s], hasShownWelcome: !0 });
                         }
                     }, [null == e ? void 0 : e.isOpen, null == e ? void 0 : e.hasShownWelcome, null == e ? void 0 : e.messages.length]);
@@ -429,31 +454,31 @@
                         return () => clearInterval(a);
                     }, [null == e ? void 0 : e.threadId]);
                 let L = (e) => {
-                        t(e);
-                    },
+                    t(e);
+                },
                     I = (e) => {
                         C.current && clearTimeout(C.current),
                             e.messages.some((e) => "user" === e.sender) &&
-                                (C.current = setTimeout(() => {
-                                    let e = k.current;
-                                    if (!e || e.hasShownNoResponseNotice || e.messages.some((e) => "support" === e.sender)) return;
-                                    let t = { id: "aiko-no-response", content: "Our team hasn't responded yet. Please leave your email and we'll get back to you as soon as possible!", sender: "aiko", author: "Aiko", timestamp: new Date() };
-                                    L({ ...e, messages: [...e.messages, t], hasShownNoResponseNotice: !0 });
-                                }, 12e4));
+                            (C.current = setTimeout(() => {
+                                let e = k.current;
+                                if (!e || e.hasShownNoResponseNotice || e.messages.some((e) => "support" === e.sender)) return;
+                                let t = { id: "aiko-no-response", content: "Our team hasn't responded yet. Please leave your email and we'll get back to you as soon as possible!", sender: "aiko", author: "Impce", timestamp: new Date() };
+                                L({ ...e, messages: [...e.messages, t], hasShownNoResponseNotice: !0 });
+                            }, 12e4));
                     };
                 (0, r.useEffect)(() => {
                     e && e.messages.some((e) => "support" === e.sender) && (C.current && (clearTimeout(C.current), (C.current = null)), e.hasShownNoResponseNotice && L({ ...e, hasShownNoResponseNotice: !1 }));
                 }, [e]);
                 let _ = async () => {
-                        if (!e) return null;
-                        try {
-                            let e = await u();
-                            if (200 !== e.status) throw Error("Failed to start chat");
-                            return e.threadId;
-                        } catch (e) {
-                            return console.error(e), null;
-                        }
-                    },
+                    if (!e) return null;
+                    try {
+                        let e = await u();
+                        if (200 !== e.status) throw Error("Failed to start chat");
+                        return e.threadId;
+                    } catch (e) {
+                        return console.error(e), null;
+                    }
+                },
                     O = async () => {
                         if (!s.trim() || f || !e) return;
                         let t = s.trim();
@@ -489,49 +514,49 @@
                     className: "fixed bottom-4 right-2 md:right-4 z-50",
                     children: [
                         !e.isOpen &&
-                            (0, a.jsxs)("div", {
-                                children: [
-                                    (0, a.jsx)("div", { className: "absolute -inset-3 bg-gradient-to-r from-red-500/30 via-orange-500/20 to-red-600/15 rounded-2xl blur-lg animate-pulse opacity-100" }),
-                                    (0, a.jsxs)("button", {
-                                        onClick: () => {
-                                            let t = e.messages[e.messages.length - 1];
-                                            L({ ...e, isOpen: !0, lastReadMessageId: null == t ? void 0 : t.id });
-                                        },
-                                        className:
-                                            "group relative bg-black/40 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 hover:border-white/20 hover:bg-black/50",
-                                        children: [
-                                            (0, a.jsx)("div", { className: "absolute inset-0 rounded-xl bg-gradient-to-br from-red-500/8 via-orange-500/5 to-red-600/3 pointer-events-none" }),
-                                            (0, a.jsx)("div", { className: "absolute inset-0 rounded-xl bg-gradient-to-br from-red-500/15 to-transparent opacity-30 pointer-events-none" }),
-                                            R > 0 &&
-                                                (0, a.jsx)("span", {
-                                                    className:
-                                                        "absolute -top-1.5 -right-1.5 h-5 w-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center font-bold border-2 border-gray-900 shadow-lg animate-pulse z-20",
-                                                    children: R,
+                        (0, a.jsxs)("div", {
+                            children: [
+                                (0, a.jsx)("div", { className: "absolute -inset-3 bg-gradient-to-r from-red-500/30 via-orange-500/20 to-red-600/15 rounded-2xl blur-lg animate-pulse opacity-100" }),
+                                (0, a.jsxs)("button", {
+                                    onClick: () => {
+                                        let t = e.messages[e.messages.length - 1];
+                                        L({ ...e, isOpen: !0, lastReadMessageId: null == t ? void 0 : t.id });
+                                    },
+                                    className:
+                                        "group relative bg-black/40 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 hover:border-white/20 hover:bg-black/50",
+                                    children: [
+                                        (0, a.jsx)("div", { className: "absolute inset-0 rounded-xl bg-gradient-to-br from-red-500/8 via-orange-500/5 to-red-600/3 pointer-events-none" }),
+                                        (0, a.jsx)("div", { className: "absolute inset-0 rounded-xl bg-gradient-to-br from-red-500/15 to-transparent opacity-30 pointer-events-none" }),
+                                        R > 0 &&
+                                        (0, a.jsx)("span", {
+                                            className:
+                                                "absolute -top-1.5 -right-1.5 h-5 w-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center font-bold border-2 border-gray-900 shadow-lg animate-pulse z-20",
+                                            children: R,
+                                        }),
+                                        (0, a.jsx)("div", {
+                                            className: "hidden absolute md:block left-1 bottom-0 w-18 h-22 z-10",
+                                            children: (0, a.jsx)(x.default, { src: "../../../_next/Aiko_Icon_Confused_2.png", width: 60, height: 72, className: "w-full h-full object-contain object-bottom", alt: "Impce Support" }),
+                                        }),
+                                        (0, a.jsxs)("div", {
+                                            className: "px-4 py-2.5 md:ml-3 md:pl-18 min-h-[48px] flex flex-col justify-start items-start text-left relative z-15",
+                                            children: [
+                                                (0, a.jsx)("div", { className: "text-white font-semibold text-sm mb-0.5", children: "Have a question?" }),
+                                                (0, a.jsxs)("div", {
+                                                    className: "text-gray-300 text-xs flex items-center gap-1.5",
+                                                    children: [(0, a.jsx)("span", { children: "Real person here!" }), (0, a.jsx)("span", { className: "text-yellow-400 text-base", children: "\uD83D\uDC4B" })],
                                                 }),
-                                            (0, a.jsx)("div", {
-                                                className: "hidden absolute md:block left-1 bottom-0 w-18 h-22 z-10",
-                                                children: (0, a.jsx)(x.default, { src: "../../../_next/Aiko_Icon_Confused_2.png", width: 60, height: 72, className: "w-full h-full object-contain object-bottom", alt: "Aiko Support" }),
-                                            }),
-                                            (0, a.jsxs)("div", {
-                                                className: "px-4 py-2.5 md:ml-3 md:pl-18 min-h-[48px] flex flex-col justify-start items-start text-left relative z-15",
-                                                children: [
-                                                    (0, a.jsx)("div", { className: "text-white font-semibold text-sm mb-0.5", children: "Have a question?" }),
-                                                    (0, a.jsxs)("div", {
-                                                        className: "text-gray-300 text-xs flex items-center gap-1.5",
-                                                        children: [(0, a.jsx)("span", { children: "Real person here!" }), (0, a.jsx)("span", { className: "text-yellow-400 text-base", children: "\uD83D\uDC4B" })],
-                                                    }),
-                                                ],
-                                            }),
-                                            (0, a.jsx)("div", {
-                                                className: "absolute inset-0 rounded-xl bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none",
-                                            }),
-                                            (0, a.jsx)("div", {
-                                                className: "absolute inset-0 rounded-xl bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none",
-                                            }),
-                                        ],
-                                    }),
-                                ],
-                            }),
+                                            ],
+                                        }),
+                                        (0, a.jsx)("div", {
+                                            className: "absolute inset-0 rounded-xl bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none",
+                                        }),
+                                        (0, a.jsx)("div", {
+                                            className: "absolute inset-0 rounded-xl bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none",
+                                        }),
+                                    ],
+                                }),
+                            ],
+                        }),
                         (0, a.jsx)("div", {
                             className: (0, d.cn)("transition-all duration-300 ease-in-out transform", e.isOpen ? "opacity-100 translate-y-0 scale-100 pointer-events-auto" : "opacity-0 translate-y-4 scale-95 pointer-events-none"),
                             children:
@@ -575,13 +600,13 @@
                                                     ],
                                                 }),
                                                 y > 0 &&
-                                                    (0, a.jsxs)("div", {
-                                                        className: "flex items-center gap-2",
-                                                        children: [
-                                                            (0, a.jsx)("span", { className: "bg-green-500 rounded-full w-2 h-2 block" }),
-                                                            (0, a.jsxs)("span", { className: "text-white/70 text-xs", children: [y, " team", " ", 1 === y ? "member is" : "members are", " online"] }),
-                                                        ],
-                                                    }),
+                                                (0, a.jsxs)("div", {
+                                                    className: "flex items-center gap-2",
+                                                    children: [
+                                                        (0, a.jsx)("span", { className: "bg-green-500 rounded-full w-2 h-2 block" }),
+                                                        (0, a.jsxs)("span", { className: "text-white/70 text-xs", children: [y, " team", " ", 1 === y ? "member is" : "members are", " online"] }),
+                                                    ],
+                                                }),
                                             ],
                                         }),
                                         (0, a.jsx)("div", {
@@ -591,41 +616,41 @@
                                             children:
                                                 0 === e.messages.length
                                                     ? (0, a.jsxs)("div", {
-                                                          className: "flex flex-col h-full",
-                                                          children: [(0, a.jsx)("div", { className: "flex-1" }), (0, a.jsx)("div", { className: "text-xs text-white/70", children: "Send a message to chat with our team" })],
-                                                      })
+                                                        className: "flex flex-col h-full",
+                                                        children: [(0, a.jsx)("div", { className: "flex-1" }), (0, a.jsx)("div", { className: "text-xs text-white/70", children: "Send a message to chat with our team" })],
+                                                    })
                                                     : (0, a.jsxs)(a.Fragment, {
-                                                          children: [
-                                                              e.messages
-                                                                  .filter((e) => "system" !== e.sender)
-                                                                  .map((e) =>
-                                                                      (0, a.jsx)(
-                                                                          "div",
-                                                                          {
-                                                                              className: (0, d.cn)("flex", "user" === e.sender ? "justify-end" : "justify-start"),
-                                                                              children:
-                                                                                  "aiko" === e.sender
-                                                                                      ? (0, a.jsxs)("div", {
-                                                                                            className: "flex items-start gap-2 max-w-[80%]",
-                                                                                            children: [
-                                                                                                (0, a.jsx)("div", {
-                                                                                                    className: "flex-shrink-0",
-                                                                                                    children: (0, a.jsx)(x.default, { src: "/_next/Aiko_Icon_Confused_2.png", width: 32, height: 32, alt: "Aiko", className: "rounded-full" }),
-                                                                                                }),
-                                                                                                (0, a.jsx)("div", { className: (0, d.cn)("max-w-[80%] rounded-lg p-2 text-sm", "bg-white/10 text-white"), children: e.content }),
-                                                                                            ],
-                                                                                        })
-                                                                                      : (0, a.jsx)("div", {
-                                                                                            className: (0, d.cn)("max-w-[80%] rounded-lg p-2 text-sm", "bg-white/10 text-white"),
-                                                                                            children: "support" === e.sender ? "".concat(e.author, ": ").concat(e.content) : e.content,
-                                                                                        }),
-                                                                          },
-                                                                          e.id
-                                                                      )
-                                                                  ),
-                                                              (0, a.jsx)("div", { ref: v }),
-                                                          ],
-                                                      }),
+                                                        children: [
+                                                            e.messages
+                                                                .filter((e) => "system" !== e.sender)
+                                                                .map((e) =>
+                                                                    (0, a.jsx)(
+                                                                        "div",
+                                                                        {
+                                                                            className: (0, d.cn)("flex", "user" === e.sender ? "justify-end" : "justify-start"),
+                                                                            children:
+                                                                                "aiko" === e.sender
+                                                                                    ? (0, a.jsxs)("div", {
+                                                                                        className: "flex items-start gap-2 max-w-[80%]",
+                                                                                        children: [
+                                                                                            (0, a.jsx)("div", {
+                                                                                                className: "flex-shrink-0",
+                                                                                                children: (0, a.jsx)(x.default, { src: "/_next/Aiko_Icon_Confused_2.png", width: 32, height: 32, alt: "Impce", className: "rounded-full" }),
+                                                                                            }),
+                                                                                            (0, a.jsx)("div", { className: (0, d.cn)("max-w-[80%] rounded-lg p-2 text-sm", "bg-white/10 text-white"), children: e.content }),
+                                                                                        ],
+                                                                                    })
+                                                                                    : (0, a.jsx)("div", {
+                                                                                        className: (0, d.cn)("max-w-[80%] rounded-lg p-2 text-sm", "bg-white/10 text-white"),
+                                                                                        children: "support" === e.sender ? "".concat(e.author, ": ").concat(e.content) : e.content,
+                                                                                    }),
+                                                                        },
+                                                                        e.id
+                                                                    )
+                                                                ),
+                                                            (0, a.jsx)("div", { ref: v }),
+                                                        ],
+                                                    }),
                                         }),
                                         (0, a.jsx)("div", {
                                             className: "p-4",
