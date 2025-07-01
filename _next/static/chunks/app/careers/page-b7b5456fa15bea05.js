@@ -185,7 +185,7 @@
                                                 (0, s.jsx)("p", {
                                                     className: "text-base sm:text-lg text-gray-400 leading-relaxed max-w-2xl lg:max-w-3xl mx-auto px-2",
                                                     children:
-                                                        "Impce is a cyber-security \xd7 AI research lab solving some of the biggest unaddressed issues both as attackers and defenders. We are looking for people who love working on challenging problems and bang their head against the wall until they figure it out.",
+                                                        "IMPCE is a cyber-security \xd7 AI research lab solving some of the biggest unaddressed issues both as attackers and defenders. We are looking for people who love working on challenging problems and bang their head against the wall until they figure it out.",
                                                 }),
                                             ],
                                         }),

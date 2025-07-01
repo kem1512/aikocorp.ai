@@ -209,7 +209,7 @@
                                 }),
                             ],
                         }),
-                        (0, a.jsx)("div", { className: "max-w-6xl mx-auto mt-8 pt-6 sm:pt-8 text-center text-xs", children: (0, a.jsxs)("p", { children: ["\xa9 ", new Date().getFullYear(), " Spoodyque. All rights reserved."] }) }),
+                        (0, a.jsx)("div", { className: "max-w-6xl mx-auto mt-8 pt-6 sm:pt-8 text-center text-xs", children: (0, a.jsxs)("p", { children: ["\xa9 ", new Date().getFullYear(), " IMPCE. All rights reserved."] }) }),
                     ],
                 });
             }
@@ -398,7 +398,7 @@
                     }, [e]),
                     (0, r.useEffect)(() => {
                         if ((null == e ? void 0 : e.isOpen) && !e.hasShownWelcome && 0 === e.messages.length) {
-                            let s = { id: "aiko-welcome", content: "Our team usually responds in 2-3 minutes. How can we help you today?", sender: "aiko", author: "Impce", timestamp: new Date() };
+                            let s = { id: "aiko-welcome", content: "Our team usually responds in 2-3 minutes. How can we help you today?", sender: "aiko", author: "IMPCE", timestamp: new Date() };
                             t({ ...e, messages: [s], hasShownWelcome: !0 });
                         }
                     }, [null == e ? void 0 : e.isOpen, null == e ? void 0 : e.hasShownWelcome, null == e ? void 0 : e.messages.length]);
@@ -462,7 +462,7 @@
                             (C.current = setTimeout(() => {
                                 let e = k.current;
                                 if (!e || e.hasShownNoResponseNotice || e.messages.some((e) => "support" === e.sender)) return;
-                                let t = { id: "aiko-no-response", content: "Our team hasn't responded yet. Please leave your email and we'll get back to you as soon as possible!", sender: "aiko", author: "Impce", timestamp: new Date() };
+                                let t = { id: "aiko-no-response", content: "Our team hasn't responded yet. Please leave your email and we'll get back to you as soon as possible!", sender: "aiko", author: "IMPCE", timestamp: new Date() };
                                 L({ ...e, messages: [...e.messages, t], hasShownNoResponseNotice: !0 });
                             }, 12e4));
                     };
@@ -535,7 +535,7 @@
                                         }),
                                         (0, a.jsx)("div", {
                                             className: "hidden absolute md:block left-1 bottom-0 w-18 h-22 z-10",
-                                            children: (0, a.jsx)(x.default, { src: "../../../_next/Aiko_Icon_Confused_2.png", width: 60, height: 72, className: "w-full h-full object-contain object-bottom", alt: "Impce Support" }),
+                                            children: (0, a.jsx)(x.default, { src: "../../../_next/Aiko_Icon_Confused_2.png", width: 60, height: 72, className: "w-full h-full object-contain object-bottom", alt: "IMPCE Support" }),
                                         }),
                                         (0, a.jsxs)("div", {
                                             className: "px-4 py-2.5 md:ml-3 md:pl-18 min-h-[48px] flex flex-col justify-start items-start text-left relative z-15",
@@ -570,7 +570,7 @@
                                                 (0, a.jsxs)("div", {
                                                     className: "flex items-center justify-between",
                                                     children: [
-                                                        (0, a.jsx)("h3", { className: "text-primary font-semibold", children: "Impce Support" }),
+                                                        (0, a.jsx)("h3", { className: "text-primary font-semibold", children: "IMPCE Support" }),
                                                         (0, a.jsxs)("div", {
                                                             className: "flex gap-4 items-center",
                                                             children: [
@@ -635,7 +635,7 @@
                                                                                         children: [
                                                                                             (0, a.jsx)("div", {
                                                                                                 className: "flex-shrink-0",
-                                                                                                children: (0, a.jsx)(x.default, { src: "/_next/Aiko_Icon_Confused_2.png", width: 32, height: 32, alt: "Impce", className: "rounded-full" }),
+                                                                                                children: (0, a.jsx)(x.default, { src: "/_next/Aiko_Icon_Confused_2.png", width: 32, height: 32, alt: "IMPCE", className: "rounded-full" }),
                                                                                             }),
                                                                                             (0, a.jsx)("div", { className: (0, d.cn)("max-w-[80%] rounded-lg p-2 text-sm", "bg-white/10 text-white"), children: e.content }),
                                                                                         ],

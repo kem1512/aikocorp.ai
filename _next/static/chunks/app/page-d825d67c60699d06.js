@@ -48,13 +48,13 @@
                                                 answer: "No hidden fees. Our transparent pricing includes all features with no usage limits. Enterprise plans include dedicated support and custom integrations.",
                                             },
                                             {
-                                                question: "Can I use Impce on behalf of my other clients?",
-                                                answer: "Yes! We offer Impce for contractors and small cybersecurity agencies to help with their clients needs. <a href='/contact'> <u> Talk to us  </u></a> for more details.",
+                                                question: "Can I use IMPCE on behalf of my other clients?",
+                                                answer: "Yes! We offer IMPCE for contractors and small cybersecurity agencies to help with their clients needs. <a href='/contact'> <u> Talk to us  </u></a> for more details.",
                                             },
                                             {
-                                                question: "Is source code required for Impce to function?",
+                                                question: "Is source code required for IMPCE to function?",
                                                 answer:
-                                                    "We support code source analysis, but you can run Impce without it too! By linking your repository you gain better results and more accurate threats that may not be visible externally.",
+                                                    "We support code source analysis, but you can run IMPCE without it too! By linking your repository you gain better results and more accurate threats that may not be visible externally.",
                                             },
                                             { question: "Do you store my code?", answer: "All code is only stored temporarily during analysis, once that's completed only vulnerabilities found and their details persist." },
                                             { question: "Do you share my data with anyone else?", answer: "No, we use AWS Bedrock so that even LLM providers don't keep your data." },
@@ -297,7 +297,7 @@
                             children: [
                                 (0, s.jsx)("h2", {
                                     className: "text-3xl sm:text-4xl md:text-5xl text-center font-bold text-white mb-4 sm:mb-6 leading-tight px-2",
-                                    children: (0, s.jsx)("span", { className: "bg-gradient-to-r from-white via-gray-100 to-red-200 bg-clip-text text-transparent", children: "What Can Impce Do For You" }),
+                                    children: (0, s.jsx)("span", { className: "bg-gradient-to-r from-white via-gray-100 to-red-200 bg-clip-text text-transparent", children: "What Can IMPCE Do For You" }),
                                 }),
                                 (0, s.jsx)("p", {
                                     className: "text-lg text-gray-300 max-w-3xl mx-auto",
@@ -312,7 +312,7 @@
                                     id: "3",
                                     company: "Lovable",
                                     logo: "./_next/lovable_logoe5fa.jpeg",
-                                    quote: "Impce delivered a detailed, well-documented penetration testing report. Great way to gain confidence in security.",
+                                    quote: "IMPCE delivered a detailed, well-documented penetration testing report. Great way to gain confidence in security.",
                                     vulnerabilities: [{ type: "high", originalType: "high" }],
                                     testType: { type: "pentest", label: "AI Pentesting" },
                                     size: "small",
@@ -1594,7 +1594,7 @@
                             id: "repo-scan",
                             label: "Code Analysis",
                             title: "Catch And Fix Issues With Every Commit",
-                            description: "Run quick security checks on your codebase. Connect your GitHub repositories, and let Impce do the rest.",
+                            description: "Run quick security checks on your codebase. Connect your GitHub repositories, and let IMPCE do the rest.",
                             icon: N.A,
                             features: ["Find secret keys lingering in your codebase", "Spot logic bugs that leads to insecurity", "Auto-patch vulnerabilities instantly"],
                             component: (0, s.jsx)(h, {}),
