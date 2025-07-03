@@ -208,9 +208,9 @@
                                         (0, s.jsx)("div", {
                                             className: "space-y-3 mx-auto sm:space-y-4 max-w-3xl lg:max-w-4xl lg:space-y-6",
                                             children: [
-                                                { title: "Researcher / Engineer", location: "Remote", applyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfQ67o5lpKkQ0eCNJk3Ao_a9fYRBOcJYzqNdunixoSk0peWyQ/viewform?usp=header" },
-                                                { title: "Sales Representative", location: "Remote", applyUrl: "https://docs.google.com/forms/d/e/1FAIpQLScckLHWbcsHG8oBsSRq6DhKTH9empP_a4JeaSOLSMN0Y0gsRA/viewform?usp=header" },
-                                                { title: "Full-stack Engineer", location: "Remote", applyUrl: "https://docs.google.com/forms/d/e/1FAIpQLScdCcLVWb33uVWWm5BmkgWoaI1kp5pFUH_aG-gfooaczNxzfw/viewform?usp=header" },
+                                                { title: "Researcher / Engineer", location: "Remote", applyUrl: "https://docs.google.com/forms/d/e/1FAIpQLScckLHWbcsHG8oBsSRq6DhKTH9empP_a4JeaSOLSMN0Y0gsRA/viewform" },
+                                                { title: "Sales Representative", location: "Remote", applyUrl: "https://docs.google.com/forms/d/e/1FAIpQLScdCcLVWb33uVWWm5BmkgWoaI1kp5pFUH_aG-gfooaczNxzfw/viewform" },
+                                                { title: "Full-stack Engineer", location: "Remote", applyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfQ67o5lpKkQ0eCNJk3Ao_a9fYRBOcJYzqNdunixoSk0peWyQ/viewform" },
                                             ].map((e, t) => (0, s.jsx)(g, { title: e.title, location: e.location, applyUrl: e.applyUrl, index: t }, e.title)),
                                         }),
                                     ],
